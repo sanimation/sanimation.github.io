@@ -1,0 +1,23 @@
+{
+  "name": "sandrine-webpage",
+  "version": "1.0.0",
+  "authors": [
+    "Sandrine <sandrine.zecler@gmail.com>"
+  ],
+  "description": "My personal web page.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://sanimation.github.io",
+  "dependencies": {
+    "foundation-sites": "~6.0.0",
+    "motion-ui": "~1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
