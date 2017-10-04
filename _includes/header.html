@@ -1,0 +1,25 @@
+<header class="mdc-toolbar">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <a class="material-icons mdc-ripple-surface mdc-toolbar__icon--menu" data-mdc-auto-init="MDCRipple"
+      data-mdc-ripple-is-unbounded>
+        menu
+      </a>
+      <span class="mdc-toolbar__title">Sandrine</span>
+    </section>
+  </div>
+</header>
+<aside class="mdc-temporary-drawer mdc-typography">
+  <nav class="mdc-temporary-drawer__drawer">
+    <div class="mdc-temporary-drawer__toolbar-spacer"></div>
+    <nav class="mdc-temporary-drawer__content mdc-list">
+      {% for node in site.data.pages %}
+        {% if page.url == node.url %}
+          <a class="mdc-list-item mdc-temporary-drawer--selected" href="{{node.url}}">{{node.title}}</a>
+        {% else %}
+          <a class="mdc-list-item" href="{{node.url}}">{{node.title}}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </nav>
+</aside>
